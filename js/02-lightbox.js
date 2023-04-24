@@ -17,8 +17,11 @@ const liElements = galleryItems.map(
 galleryList.insertAdjacentHTML('beforeend', liElements.join(''));
 
 const gallery = new SimpleLightbox('.gallery a', {
-    captions: true,
-    captionDelay: 250
+  captions: true,
+  captionDelay: 250,
+  captionType:'attr'
 });
+
+
 
 
